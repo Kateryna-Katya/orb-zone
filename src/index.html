@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orb-Zone | Консалтинг нового поколения</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='16' cy='16' r='14' stroke='%233b82f6' stroke-width='2.5' stroke-dasharray='60 30' /%3E%3Ccircle cx='16' cy='16' r='6' fill='%230f172a' /%3E%3Ccircle cx='25' cy='10' r='3' fill='%233b82f6' /%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.321.0/font/lucide.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -16,7 +22,22 @@
     </main>
 
     <load src="./partials/footer.html" />
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="cookie-popup__content">
+          <div class="cookie-popup__icon"><i data-lucide="cookie"></i></div>
+          <p class="cookie-popup__text">
+              Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.
+          </p>
+          <button id="cookie-accept" class="btn btn--primary btn--sm">Принять</button>
+      </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script src="https://unpkg.com/split-type"></script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
