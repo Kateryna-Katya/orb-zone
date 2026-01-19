@@ -1357,7 +1357,7 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .legal-title { font-size: 2.5rem; }
+  .legal-title { font-size: 1.9rem; }
   .cookie-grid { grid-template-columns: 1fr; }
   .legal-contact-block { padding: 30px; }
 }
